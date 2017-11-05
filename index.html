@@ -1,132 +1,101 @@
-<!DOCTYPE html>
+<!--
+I'm new, go easy...
 
-<html lang="en">
-
-<head>
-	<meta charset="utf-8">
-	<meta name="description" content="A minimalistic start page for your browser">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-
-	<title>Startpage</title>
-
- 	<link href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en" rel="stylesheet">
- 	<link rel="stylesheet" href="https://storage.googleapis.com/code.getmdl.io/1.0.1/material.grey-blue.min.css" />
- 	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-
-	<link rel="stylesheet" href="css/style.css"> 	 
-
-</head>
-
-<body>
-
-	<div class="mdl-layout__container">
-		<div class="mdl-layout mdl-js-layout">
-
-		<main class="mdl-layout__content">
-
-			<div class="mdl-grid content">
-			
-				<!-- padder -->
-				<div class="mdl-cell mdl-cell--4-col mdl-cell--1-col-tablet mdl-cell--hide-phone"></div>
-
-				<!--
-				Search widget
-				for searching on ddg
-				-->
-				<div class="search-widget mdl-card mdl-shadow--6dp demo-card-wide mdl-cell mdl-cell--4-col mdl-cell--6-col-tablet mdl-cell--12-col-phone">
-					<div class="mdl-card__title mdl-color--red">
-						<i class="material-icons mdl-color-text--white" id="search-icon">search</i>
-						<h2 class="mdl-card__title-text mdl-color-text--white">Duckduckgo</h2>
-					</div>
-					<div class="mdl-card__supporting-text">
-						<div class="mdl-textfield mdl-js-textfield">
-							<input class="mdl-textfield__input" type="text" id="search" />
-							<label class="mdl-textfield__label" for="search">Memes..</label>
+Give Credit were it's due, ur mum
+-->
+<html>
+	<head>
+		<title>Startpage</title>
+		<link href="style.css" rel="stylesheet" type="text/css">
+	</head>
+	<body>
+		<div class="search">
+			<form action="javascript:search()">
+				<input id="search" value="" placeholder="Search..." type="input" spellcheck="false" autofocus/>
+			</form>
+		</div>	
+		<div class="container">
+					<div class="button-1">
+						<p>General</p>
+						<div class="menu-1">
+							<a href="#">Zamzar</a><br><br>
+							<a href="#">The PirateBay</a><br><br>
+							<a href="#">Torrentz</a><br><br>
+							<a href="#">Ookla</a><br><br>
+							<a href="#">url Shortener</a><br><br>
+							<a href="#">PNC Bank</a><br><br>
+							<a href="#">YouTube - mp3</a><br><br>
+							<a href="#"></a><br><br>
+							<a href="#"></a><br><br>
+							<a href="#"></a><br><br>
 						</div>
 					</div>
-					<div class="mdl-cared__menu">
-						<a class="mdl-button mdl-color-text--red-800 mdl-js-button mdl-js-ripple-effect" id="button-search">
-							Search
-						</a>
+					<div class="button-2">
+						<p>Social</p>
+						<div class="menu-2">
+							<a href="#">YouTube</a><br><br>
+							<a href="#">Amazon</a><br><br>
+							<a href="#">Tumblr</a><br><br>
+							<a href="#">Netflix</a><br><br>
+							<a href="#">Steam</a><br><br>
+							<a href="#">G2A</a><br><br>
+							<a href="#">Chill Music</a><br><br>
+							<a href="#"></a><br><br>
+							<a href="#"></a><br><br>
+							<a href="#"></a><br><br>
+						</div>
 					</div>
-				</div>
-
-				<!-- padder -->
-				<div class="mdl-cell mdl-cell--4-col mdl-cell--1-col-tablet mdl-cell--hide-phone"></div>
-
-				<!-- padder -->
-				<div class="mdl-cell mdl-cell--1-col mdl-cell--hide-tablet mdl-cel--hide-phone"></div>
-
-				<div class="links mdl-card mdl-shadow--6dp mdl-color--grey-300 mdl-cell mdl-cell--2-col mdl-cell--4-col-tablet mdl-cell--8-col-phone">
-					<div class="mdl-card__title mdl-color--purple">
-						<h4 class="mdl-card__title-text mdl-color-text--grey-50">Chans</h4>
+					<div class="button-3">
+						<p>Code</p>
+						<div class="menu-3">
+							<a href="#">CodeAcademy</a><br><br>
+							<a href="#">w3s - html</a><br><br>
+							<a href="#">w3s - css</a><br><br>
+							<a href="#">w3s - js</a><br><br>
+							<a href="#">w3s - hex</a><br><br>
+							<a href="#">Flaticon</a><br><br>
+							<a href="#">Color Code</a><br><br>
+							<a href="#">Image Hex</a><br><br>
+							<a href="#">Ducky Script</a><br><br>
+							<a href="#">SVGs</a><br><br>
+						</div>
 					</div>
-					<div class="mdl-card__supporting-text mdl-color-text--grey-900">
-						<a href="https://boards.4chan.org/pol/" class="link mdl-button">Fair and Balanced™</a>
-						<a href="https://boards.4chan.org/g/" class="link mdl-button">Technology</a>
-							<a href="https://boards.4chan.org/biz/" class="link mdl-button">Business</a>
-							<a href="https://boards.4chan.org/lit/" class="link mdl-button">Literature</a>
+					<div class="button-4">
+						<p>School</p>
+						<div class="menu-4">
+							<a href="#">Canvas</a><br><br>
+							<a href="#">St. Xavier</a><br><br>
+							<a href="#">Outlook</a><br><br>
+							<a href="#">Office 365</a><br><br>
+							<a href="#">Gmail</a><br><br>
+							<a href="#">Thingiverse</a><br><br>
+							<a href="#"></a><br><br>
+							<a href="#"></a><br><br>
+							<a href="#"></a><br><br>
+							<a href="#"></a><br><br>
+						</div>
 					</div>
-				</div>
-
-				<div class="links mdl-card mdl-shadow--6dp mdl-color--grey-300 mdl-cell mdl-cell--2-col mdl-cell--4-col-tablet mdl-cell--8-col-phone">
-					<div class="mdl-card__title mdl-color--pink">
-						<h4 class="mdl-card__title-text mdl-color-text--grey-50">Propaganda</h4>
+					<div class="button-5">
+						<p>4chan</p>
+						<div class="menu-5">
+							<a href="#">Main</a><br><br>
+							<a href="#">/wg/</a><br><br>
+							<a href="#">/gd/</a><br><br>
+							<a href="#">/b/</a><br><br>
+							<a href="#">/pol/</a><br><br>
+							<a href="#">/soc/</a><br><br>
+							<a href="#">/gif/</a><br><br>
+							<a href="#">/r9k/</a><br><br>
+							<a href="#"></a><br><br>
+							<a href="#"></a><br><br>
+						</div>
 					</div>
-					<div class="mdl-card__supporting-text mdl-color-text--grey-900">
-						<a href="https://www.geenstijl.nl/" class="link mdl-button">GeenSteil</a>
-							<a href="http://www.zerohedge.com/" class="link mdl-button">ZeroHedge</a>
-					</div>
-				</div>
-
-				<div class="links mdl-card mdl-shadow--6dp mdl-color--grey-300 mdl-cell mdl-cell--2-col mdl-cell--4-col-tablet mdl-cell--8-col-phone">
-					<div class="mdl-card__title mdl-color--cyan">
-						<h4 class="mdl-card__title-text mdl-color-text--grey-50">Reddits</h4>
-					</div>
-					<div class="mdl-card__supporting-text mdl-color-text--grey-900">
-					
-						<a href="https://www.reddit.com/r/all" class="link mdl-button">All</a>
-							<a href="https://reddit.com/r/politics" class="link mdl-button">Politics</a>
-						<a href="https://www.reddit.com/r/science" class="link mdl-button">Science</a>
-								<a href="https://www.reddit.com/r/overwatch" class="link mdl-button">Overwatch</a>
-					</div>
-				</div>
-
-				<div class="links mdl-card mdl-shadow--6dp mdl-color--grey-300 mdl-cell mdl-cell--2-col mdl-cell--4-col-tablet mdl-cell--8-col-phone">
-					<div class="mdl-card__title mdl-color--green">
-						<h4 class="mdl-card__title-text mdl-color-text--grey-50">Tools</h4>
-					</div>
-					<div class="mdl-card__supporting-text mdl-color-text--grey-900">
-						<a href="https://www.linkedin.com/" class="link mdl-button">LinkedIn</a>
-						<a href="https://web.whatsapp.com/" class="link mdl-button">Whatsapp</a>
-							
-					</div>
-				</div>
-
-				<div class="links mdl-card mdl-shadow--6dp mdl-color--grey-300 mdl-cell mdl-cell--2-col mdl-cell--4-col-tablet mdl-cell--8-col-phone">
-					<div class="mdl-card__title mdl-color--orange">
-						<h4 class="mdl-card__title-text mdl-color-text--grey-50">Media</h4>
-					</div>
-					<div class="mdl-card__supporting-text mdl-color-text--grey-900">
-						<a href="https://soundcloud.com/" class="link mdl-button">Soundcloud</a>
-						<a href="https://www.youtube.com/user/MrNiekE/playlists?flow=list&view=1&sort=dd" class="link mdl-button">Youtube</a>
-							<a href="http://sceper.ws/" class="link mdl-button">Sceper Scene Releases</a>
-							<a href="http://localhost:8989/" class="link mdl-button">Sonarr (Local)</a>
-						<a href="http://localhost:8080/" class="link mdl-button">SABnzbd (Local)</a>
-					</div>
-				</div>	
-
-			</div>
-
-		</main>
-
 		</div>
-	</div>
-
-	<script src="https://storage.googleapis.com/code.getmdl.io/1.0.1/material.min.js"></script>
-
-	<script type="text/javascript" src="js/script.js"></script>
-
-</body>
-
+		<script>
+			function search(){
+				var query = document.getElementById('search').value;
+				window.location = 'https://www.google.com/#q=' + query;
+			}		
+		</script>
+	</body>
 </html>
